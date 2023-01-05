@@ -1,10 +1,6 @@
 <?php
 $insert = false;
 
-if ($_SERVER["REQUEST_METHOD"]=='GET') {
-echo "Hello World";
-} else {
-    
 if(isset($_POST['name'])){
 
     //set connection variable
@@ -48,8 +44,6 @@ if(isset($_POST['name'])){
     //Close the database connection
     $con->close();
 }
-}
-
 
 ?>
 
