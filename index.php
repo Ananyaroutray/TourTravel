@@ -46,6 +46,8 @@ if(isset($_POST['name'])){
 
 ?>
 
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -60,20 +62,21 @@ if(isset($_POST['name'])){
     <div class="container">
         <h1>Welcome to Bhubaneswar trip form</h1>
         <p>Enter your details for participation in the trip</p>
+        
         <?php
          if($insert == true){
            echo  "<p class='submitMsg'>Thanks for submitting your form. We are happy to see you joining with us.</p>";
          }
         ?>
-
-        <form action="index.php" method="post">
+        
+        <form method="post">
             <input type="text" name="name" id="name" placeholder="Enter your name">
             <input type="text" name="age" id="age" placeholder="Enter your age">
             <input type="text" name="gender" id="gender" placeholder="Enter your gender">
             <input type="email" name="email" id="email" placeholder="Enter your email">
             <input type="phone" name="phone" id="phone" placeholder="Enter your phone">
             <textarea name="desc" id="desc" cols="30" rows="10" placeholder="Enter your other information here"></textarea>
-            <button class="btn" >Submit</button>
+            <button class="btn" type="submit">Submit</button>
             <!-- <button class="btn">Reset</button> -->
         </form>
     </div>
